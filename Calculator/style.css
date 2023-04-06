@@ -47,9 +47,9 @@ body>div.container>div>div.opButtons>div>span {
 }
 
 .clear {
-    width: 5em;
-    border-radius: 10%;
-    margin: 2px 0px 2px 0px;
+    width: 11em;
+    border-radius: 5%;
+    margin: 1px 5px 5px 0px;
 }
 
 .delete {

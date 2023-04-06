@@ -9,7 +9,8 @@ let accumulativeCalculation
 function calculate(button) {
     const value = button.textContent
     if (value === "clear") {
-        return false;
+        calculation = []
+        document.querySelector(".input").textContent = '';
     } else if (value === "=") {
         input.textContent = result
     }
@@ -18,12 +19,9 @@ function calculate(button) {
     input.textContent = accumulativeCalculation
 }
 
-clear.addEventListener('click', () => {
-    document.querySelector(".input").innerHTML = '';
-    calculation = []
-
-    console.log(clear)
-})
+clear.onclick = function () {
+    window.location.reload();
+}
 
 
 console.log(calculate)
